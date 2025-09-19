@@ -44,20 +44,21 @@ export default sidebar({
               "15-searching-algorithms",
             ],
           },
-        {          text: "C++",
+        {
+          text: "C++",
           icon: "cpp",
           prefix: "cpp/",
           children: [
             "",
+            "course-plan",
             "01-basic-syntax",
             "02-oop-basics",
+            "03-oop-advanced",
             "03-templates-stl",
-            "04-stl-algorithms",
             "05-smart-pointers",
             "06-exception-handling",
             "07-lambda-expressions",
-            "08-advanced-features",
-            "09-advanced-data-structures"
+            "08-advanced-features"
           ],
         },
         {

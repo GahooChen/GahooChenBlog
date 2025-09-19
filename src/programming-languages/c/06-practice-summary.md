@@ -131,7 +131,7 @@ int main() {
 // 定义一个表示圆周率的宏
 #define PI 3.14159
 
-// 定义一个计算圆面积的宏
+// 定义一个计算圆面积的宏函数
 #define AREA_OF_CIRCLE(r) (PI * (r) * (r))
 
 #include <stdio.h>
@@ -152,6 +152,103 @@ int main() {
 - 可以避免重复输入相同的值
 - 修改宏定义后，所有使用该宏的地方都会自动更新
 - 宏函数可以像函数一样使用，但没有函数调用的开销
+
+### 宏函数的高级用法
+
+宏函数不仅可以做简单的替换，还有很多高级的用法哦！
+
+#### 带多个参数的宏函数
+
+宏函数可以接受多个参数，就像真正的函数一样：
+
+```c
+#define ADD(a, b) ((a) + (b))
+#define SUBTRACT(a, b) ((a) - (b))
+#define MULTIPLY(a, b) ((a) * (b))
+#define DIVIDE(a, b) ((a) / (b))
+```
+
+#### 包含多条语句的宏函数
+
+宏函数也可以包含多条语句，使用`\`符号来换行：
+
+```c
+#define SWAP(a, b, type) \
+    do { \
+        type temp = (a); \
+        (a) = (b); \
+        (b) = temp; \
+    } while(0)
+
+// 使用示例
+int main() {
+    int x = 10, y = 20;
+    SWAP(x, y, int);
+    printf("x = %d, y = %d\n", x, y);  // 输出：x = 20, y = 10
+    return 0;
+}
+```
+
+#### 字符串化操作符（#）
+
+字符串化操作符`#`可以将宏参数转换为字符串：
+
+```c
+#define PRINT_VAR(var) printf("%s = %d\n", #var, var)
+
+int main() {
+    int score = 95;
+    PRINT_VAR(score);  // 输出：score = 95
+    return 0;
+}
+```
+
+#### 连接操作符（##）
+
+连接操作符`##`可以将两个标识符连接成一个新的标识符：
+
+```c
+#define CREATE_VAR(prefix, num) prefix##num
+
+int main() {
+    int CREATE_VAR(counter, 1) = 10;  // 相当于 int counter1 = 10;
+    int CREATE_VAR(counter, 2) = 20;  // 相当于 int counter2 = 20;
+    printf("counter1 = %d, counter2 = %d\n", counter1, counter2);
+    return 0;
+}
+```
+
+#### 可变参数宏
+
+C99标准引入了可变参数宏，可以接受可变数量的参数：
+
+```c
+#define PRINTF(format, ...) printf(format, __VA_ARGS__)
+
+int main() {
+    PRINTF("Hello, %s!\n", "world");  // 输出：Hello, world!
+    PRINTF("x = %d, y = %d\n", 10, 20);  // 输出：x = 10, y = 20
+    return 0;
+}
+```
+
+#### 使用宏函数的注意事项
+
+虽然宏函数很强大，但使用时也需要注意一些问题：
+
+1. **括号很重要**：一定要给宏参数和整个宏体加上足够的括号，避免运算符优先级导致的问题
+2. **可能导致代码膨胀**：因为宏是文本替换，多次使用同一个宏会导致生成的代码变大
+3. **没有类型检查**：宏不像函数那样有参数类型检查，使用时要格外小心
+4. **不能调试**：宏在编译前就被替换了，所以无法像函数那样进行调试
+
+#### 宏函数与普通函数的对比
+
+- **执行速度**：宏函数更快，因为它是编译时替换，没有函数调用的开销
+- **代码大小**：宏函数可能导致代码更大，而函数不会
+- **参数检查**：函数有参数类型检查，宏没有
+- **调试**：函数可以调试，宏不能
+
+宏函数是C语言中一个非常强大的工具，合理使用可以让你的代码更简洁、更高效！
 
 #### 2.3 #ifdef, #ifndef, #else, #endif：条件编译
 
