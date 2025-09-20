@@ -22,42 +22,36 @@ Python就像是一位友好的编程老师，它会耐心地引导你进入编�
 - [条件语句](05-conditional-statements.md)：学习如何让程序做决定（if、elif和else语句）
 - [循环语句](06-loop-statements.md)：学习如何让程序重复做某件事（for和while循环）
 - [实战小练习与总结](07-practice-summary.md)：通过有趣的练习巩固基础语法知识
-- [字符串处理](08-string-manipulation.md)：学习如何让Python处理文本信息
 
-### 进阶探索（就像学写作文和讲故事）
-- [列表与元组](09-lists-tuples.md)：学习如何在Python中整理和使用一组数据
-- [字典与集合](10-dictionaries-sets.md)：学习Python中更高级的数据组织方式
-- [函数基础](11-functions-basics.md)：学习如何把复杂任务拆成小步骤
-- [函数进阶](12-functions-advanced.md)：学习函数的更多高级特性
-- [模块与包](13-modules-packages.md)：学习如何组织和重用Python代码
-- [文件操作](14-file-operations.md)：学习如何让Python读写文件，保存你的创作成果
-- [异常处理](15-exception-handling.md)：学习如何优雅地处理程序中的错误
-- [实战项目：简易计算器](16-project-calculator.md)：通过实际项目巩固所学知识
+### 数据结构与字符串处理
+- [列表](08-lists.md)：学习Python中最常用的数据结构之一
+- [元组、集合与字典](09-tuples-sets-dictionaries.md)：学习Python中其他重要的数据组织方式
+- [字符串与正则表达式](10-strings-and-regular-expressions.md)：学习如何让Python处理文本信息和模式匹配
 
-### 数据处理与可视化（就像学习绘画和制作图表）
-- [数字处理](17-number-processing.md)：学习Python中的数学计算和数字处理
-- [正则表达式](18-regular-expressions.md)：学习如何用特殊的模式匹配文本
-- [日期与时间](19-date-time.md)：学习如何让Python处理时间和日期
-- [数据分析基础](20-data-analysis-basics.md)：初步了解如何用Python分析数据
-- [数据可视化入门](21-data-visualization.md)：学习如何用Python制作漂亮的图表
-- [实战项目：数据分析小案例](22-project-data-analysis.md)：通过实际项目练习数据处理和可视化
+### 函数与模块
+- [函数](11-functions.md)：学习如何把复杂任务拆成小步骤
+- [模块与包](12-modules-packages.md)：学习如何组织和重用Python代码
 
-### 面向对象编程（就像学习组建自己的小团队）
-- [类与对象基础](23-classes-objects-basics.md)：理解Python的面向对象编程概念
-- [继承与多态](24-inheritance-polymorphism.md)：学习面向对象编程的核心特性
-- [封装与抽象](25-encapsulation-abstraction.md)：理解信息隐藏和抽象的概念
-- [特殊方法与运算符重载](26-special-methods.md)：学习如何自定义类的行为
-- [设计模式入门](27-design-patterns.md)：了解一些常用的编程设计模式
-- [实战项目：简单游戏开发](28-project-game-development.md)：通过游戏开发练习面向对象编程
+### 错误处理与文件操作
+- [异常处理](13-exceptions-handling.md)：学习如何优雅地处理程序中的错误
+- [文件处理](14-file-handling.md)：学习如何让Python读写文件，保存你的创作成果
 
-### 高级应用（就像学习成为编程大师的秘诀）
-- [迭代器与生成器](29-iterators-generators.md)：学习Python中高效处理序列数据的方式
-- [装饰器](30-decorators.md)：学习如何增强函数的功能
-- [上下文管理器](31-context-managers.md)：学习如何更好地管理资源
-- [并发编程](32-concurrency.md)：学习如何让程序同时做多个事情
-- [网络编程基础](33-network-programming.md)：初步了解如何用Python进行网络通信
-- [数据库操作](34-database-operations.md)：学习如何让Python与数据库交互
-- [Python进阶实战](35-advanced-project.md)：一个综合性的实战项目，运用所学的各种知识
+### 面向对象编程
+- [面向对象编程基础](15-object-oriented-programming.md)：理解Python的面向对象编程概念
+- [高级面向对象编程](16-advanced-oop.md)：学习面向对象编程的高级特性
+
+### 高级Python特性
+- [迭代器、生成器与协程](17-iterators-generators-coroutines.md)：学习Python中高效处理序列数据的方式
+- [上下文管理器与装饰器](18-context-managers-decorators.md)：学习如何更好地管理资源和增强函数功能
+- [高级主题](19-advanced-topics.md)：探索Python中更深入的概念和技术
+
+### 实际应用
+- [并发编程](20-concurrency.md)：学习如何让程序同时做多个事情
+- [网络编程](21-network-programming.md)：初步了解如何用Python进行网络通信
+- [数据库编程](22-database-programming.md)：学习如何让Python与数据库交互
+- [GUI编程](23-gui-programming.md)：学习如何创建图形用户界面
+- [图形与多媒体](24-graphics-and-multimedia.md)：学习如何在Python中处理图形和多媒体
+- [科学计算与数据分析](25-scientific-computing-data-analysis.md)：了解如何用Python进行科学计算和数据分析
 
 ## 怎么才能学好Python？
 
