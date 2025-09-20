@@ -24,24 +24,24 @@ C++就像是C语言的升级版，它保留了C语言的高效和灵活，同时
 - [类与对象基础](05-classes-objects.md)：理解C++的核心概念——类和对象
 - [构造函数与析构函数](06-constructors-destructors.md)：学习对象的创建和销毁过程
 - [继承与多态](07-inheritance-polymorphism.md)：掌握面向对象编程的核心特性
-- [封装与访问控制](08-encapsulation-access.md)：理解信息隐藏和访问权限控制
-- [抽象类与接口](09-abstract-classes-interfaces.md)：学习如何设计灵活的类层次结构
 
 ### 泛型编程与模板（就像学习制作万能工具）
-- [函数模板](10-function-templates.md)：学习编写可以处理不同数据类型的函数
-- [类模板](11-class-templates.md)：掌握创建通用类的方法
-- [模板特化](12-template-specialization.md)：了解如何为特定类型定制模板行为
+- [运算符重载](08-operator-overloading.md)：掌握如何自定义运算符的行为
+- [模板](09-templates.md)：学习编写可以处理不同数据类型的通用代码
 
 ### C++标准库（就像学习使用现成的高级工具）
-- [STL容器入门](13-stl-containers-basics.md)：认识C++标准库中的常用容器
-- [STL算法](14-stl-algorithms.md)：学习使用STL提供的强大算法
-- [字符串处理](15-string-manipulation.md)：掌握C++中更方便的字符串操作
-- [智能指针](16-smart-pointers.md)：了解C++11引入的自动内存管理工具
+- [STL容器](10-standard-library-containers.md)：认识C++标准库中的常用容器
+- [STL算法](11-standard-library-algorithms.md)：学习使用STL提供的强大算法
+- [异常处理](12-exception-handling.md)：学习如何优雅地处理程序中的错误
+- [RAII资源管理](13-raii-resource-management.md)：理解C++的资源获取即初始化原则
+- [命名空间](14-namespaces.md)：了解如何组织大型C++程序
+- [STL算法进阶](15-stl-algorithms.md)：深入学习STL算法的高级用法
 
 ### C++高级特性（就像学习成为编程大师的秘诀）
-- [异常处理](17-exception-handling.md)：学习如何优雅地处理程序中的错误
-- [命名空间](18-namespaces.md)：理解如何组织大型C++程序
-- [运算符重载](19-operator-overloading.md)：掌握如何自定义运算符的行为
+- [内存模型](16-memory-model.md)：了解C++的内存管理机制
+- [多线程编程](17-multithreading.md)：学习如何编写并发程序
+- [移动语义](18-move-semantics.md)：掌握C++11引入的移动语义
+- [智能指针](19-smart-pointers.md)：使用自动内存管理工具
 - [C++11及以后的新特性](20-modern-cpp-features.md)：了解C++的现代发展和新特性
 
 ## 怎么才能学好C++？
